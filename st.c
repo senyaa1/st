@@ -1099,6 +1099,11 @@ static char *getcwd_by_pid(pid_t pid) {
 	return realpath(buf, NULL);
 }
 
+int tisaltscr(void)
+{
+	return IS_SET(MODE_ALTSCREEN);
+}
+
 void
 tswapscreen(void)
 {
