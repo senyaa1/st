@@ -77,6 +77,7 @@ typedef union {
 	int i;
 	uint ui;
 	float f;
+	char* ca;
 	const void *v;
 	const char *s;
 } Arg;
@@ -88,6 +89,9 @@ void draw(void);
 
 void kscrolldown(const Arg *);
 void kscrollup(const Arg *);
+
+void kwrite(const Arg *);
+void kexecsh(const Arg *);
 
 void externalpipe(const Arg *);
 void newterm(const Arg *);
